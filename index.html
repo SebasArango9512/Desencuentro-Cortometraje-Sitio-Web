@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class='no-js' lang='en'>
+	<!--<![endif]-->
+	<head>
+		<meta charset='utf-8' />
+		<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible' />
+		<title>Desencuentro Cortometraje</title>
+
+		<meta content='jQuery Plugin to make jQuery Cycle Plugin work as a fullscreen background image slideshow' name='description' />
+		<meta content='Aaron Vanderzwan' name='author' />
+
+		<meta name="distribution" content="global" />
+		<meta name="language" content="en" />
+		<meta content='width=device-width, initial-scale=1.0' name='viewport' />
+
+		<link rel="stylesheet" href="css/jquery.maximage.css?v=1.2" type="text/css" media="screen" charset="utf-8" />
+		<link rel="stylesheet" href="css/screen.css?v=1.2" type="text/css" media="screen" charset="utf-8" />
+		<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" charset="utf-8" />
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+
+		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+		<style type="text/css" media="screen">
+			#maximage {
+/*				position:fixed !important;*/
+			}
+
+			/*Set my logo in bottom left*/
+			#logo {
+				bottom:30px;
+				height:auto;
+				left:30px;
+				position:absolute;
+				width:34%;
+				z-index:1000;
+			}
+			#logo img {
+				width:100%;
+			}
+
+			#arrow_left, #arrow_right {
+				bottom:30px;
+				height:67px;
+				position:absolute;
+				right:30px;
+				width:36px;
+				z-index:1000;
+			}
+			#arrow_left {
+				right:86px;
+			}
+
+			#arrow_left:hover, #arrow_right:hover {
+				bottom:29px;
+			}
+			#arrow_left:active, #arrow_right:active {
+				bottom:28px;
+			}
+
+		</style>
+
+		<!--[if IE 6]>
+			<style type="text/css" media="screen">
+				/*I don't feel like messing with pngs for this browser... sorry*/
+				#gradient {display:none;}
+			</style>
+		<![endif]-->
+	</head>
+	<body>
+
+
+<div class="logo">
+<img src="images/logo-home.png">
+
+</div>
+
+<div class="menu">
+<ul>
+	<li> <a href="index.html">Home</a> </li>
+	<li><a href="sobre-el-proyecto.html"> Sobre el proyecto</a> </li>
+	<li><a href="equipo-trabajo.html"> Equipo de trabajo</a> </li>
+	<li><a href="multimedia.html"> Multimedia</a> </li>
+	<li> <a href="contacto.html">Contacto</a> </li>
+</ul>
+
+</div>
+
+		<a href="" id="arrow_left"><img src="images/demo/arrow_left.png" alt="Slide Left" /></a>
+		<a href="" id="arrow_right"><img src="images/demo/arrow_right.png" alt="Slide Right" /></a>
+
+		<div id="maximage">
+		    <img src="images/demo/Captura de pantalla 2017-05-02 a la(s) 11.18.52 PM.png" alt="" width="1400" height="1050" />
+			<img src="images/demo/CAMU0415.JPG" alt= width="1400" height="1050" />
+            <img src="images/demo/Captura de pantalla 2017-05-02 a la(s) 11.27.35 PM.png" alt= width="1400" height="1050" />
+            <img src="images/demo/Captura de pantalla 2017-05-02 a la(s) 11.34.41 PM.png" alt= width="1400" height="1050" />
+            <img src="images/demo/Captura de pantalla 2017-05-02 a la(s) 11.30.05 PM.png" alt= width="1400" height="1050" />
+		</div>
+
+		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js'></script>
+		<script src="js/jquery.cycle.all.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.maximage.js" type="text/javascript" charset="utf-8"></script>
+
+		<script type="text/javascript" charset="utf-8">
+			$(function(){
+				// Trigger maximage
+				$('#maximage').maximage({
+					cycleOptions: {
+						fx: 'fade',
+						speed: 1000, // Has to match the speed for CSS transitions in jQuery.maximage.css (lines 30 - 33)
+						timeout: 2,
+						prev: '#arrow_left',
+						next: '#arrow_right',
+						pause: 1,
+						after: function(last,current){
+							// console.log($(current).find('.light-text').html());
+						}
+					}
+				});
+			});
+		</script>
+
+		<!-- DON'T USE THIS: Insert Google Analytics code here -->
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-733524-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+
+
+		<br clear="all">
+		<div class="footer-home">
+
+		Sebastián Arango Arias- Productor de campo: 318-615-50-81
+
+		</div>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+body{ font-family: 'Montserrat', sans-serif; background-color: #cfa031}
+.logo{ width: 501px; margin: 0 auto;}
+.menu{ width: 900px; background-color:#000; height: 30px; margin: 0 auto; padding: 20px ; margin-top: 30px; color: #fff;}
+.menu ul{ list-style: none; margin: 0 auto; text-align: center; width: 900px; background-color:#98d0e2;}
+.menu li{ float: left; border-right: 1px solid #fff; padding-right: 20px;margin-right: 40px; margin-left: 20px; height: 50px; }
+.menu li a{ color:#fff; text-decoration: none;}
+.menu li:last-child{ float: right; border: none;}
+.info-container{ width: 1024px; margin: 20px auto 0 auto;}
+.img-proyecto{ float: left; margin-right: 20px; width: 500px;}
+.info{ float: left; width: 500px; margin-top: 80px}
+h1{ text-align: center; border: 2px solid #000; padding: 10px; display: table; font-size: 20px; width: 300px; margin: 0 auto 20px auto; }
+h2{ font-size: 18px; font-weight: bold;}
+.foto-equipo{ width: 230px; float: left; text-align: center;}
+.fila-fotos-1 { width: 800px; margin: 0 auto;}
+.fila-fotos-1 .foto-equipo{ margin-bottom: 20px; margin-left: 30px;}
+.fila-fotos-2 .foto-equipo{margin-left: 10px;}
+.footer-home{ background: #000;height: 30px; text-align: center; color: #fff; padding-top: 10px; margin-top: 30px; position: absolute; bottom: 0; width: 100%}
+.footer{ background: #000;height: 30px; text-align: center; color: #fff; padding-top: 10px; margin-top: 30px;}
